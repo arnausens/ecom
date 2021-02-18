@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import PageTitle from '../pageTitle';
-import PurchaseDetail from './purchase-detail';
+import PurchaseDetail from './purchaseDetail';
 import Purchases from './purchases';
 
 class PurchaseHistory extends Component {
