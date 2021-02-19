@@ -4,6 +4,7 @@ import {
 } from './types';
 
 export function setPurchaseDetail(_id) {
+    console.log(_id);
     return ({
         type:  SET_PURCHASE_DETAIL,
         payload: _id
@@ -60,8 +61,8 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 4,
-                total: 19.40,
-                orderNumber: 'A0048248343',
+                total: 9.80,
+                orderNumber: 'A0048248368',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
@@ -71,8 +72,8 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 5,
-                total: 19.40,
-                orderNumber: 'A0048248343',
+                total: 13.47,
+                orderNumber: 'A0048223447',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
@@ -82,8 +83,8 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 6,
-                total: 19.40,
-                orderNumber: 'A0048248343',
+                total: 13.40,
+                orderNumber: 'A0048248349',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
