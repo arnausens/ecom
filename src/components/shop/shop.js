@@ -7,6 +7,15 @@ import ShopSearchBar from './shopSearchBar';
 import ShopCart from './shopCart';
 
 class Shop extends Component {
+
+    constructor() {
+        super()
+
+        this.state = {
+            showCart: true
+        }
+    }
+
     componentDidMount() {
         const headerLinks = [
             {
@@ -35,7 +44,7 @@ class Shop extends Component {
 
 
     render() {
-        return <ShopCart className='shop__cart'/>
+        // return <ShopCart className='shop__cart'/>
 
         return (
             <div className='shop'>
@@ -49,6 +58,9 @@ class Shop extends Component {
                         })
                     }
                 </div>
+                {
+                    this.state.showCart ? <ShopCart className='shop__cart'/> : ''
+                }
             </div>
         )
     }
