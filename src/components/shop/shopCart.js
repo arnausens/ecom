@@ -56,7 +56,7 @@ class ShopCart extends Component {
     }
 
     render() {
-        const{ className } = this.props;
+        const { className } = this.props;
         return( 
             <div id='shop-cart' className={`${className} shop-cart cart-hidden`}>
                 <CartButton className='shop-cart__toggle' icon='fas fa-times' onClick={this.handleAddToCart}/>
