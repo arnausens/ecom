@@ -11,6 +11,11 @@ class ReviewForm extends Component {
         const { className, handleSubmit } = this.props;
         return (
             <form onSubmit={handleSubmit} className={`${className} review-form`}>
+                <div className='review-form__legend'>
+                    <div className='review-form__legend__name'>Name</div>
+                    <div className='review-form__legend__quantity'>Quantity</div>
+                    <div className='review-form__legend__price'>Price</div>
+                </div>
                 <ReviewProducts className='review-form__products'/>
                 <div className='review-form__line'></div>
                 <Field className='review-form__proceed'
@@ -19,8 +24,6 @@ class ReviewForm extends Component {
                 title='Proceed to Checkout'
                 name='proceed'
                 component={FormButton}/>
-                <div className='review-form__line'></div>
-
                 <Field className='review-form__back'
                 onClick={() => history.push('/shop')}
                 type='button'
